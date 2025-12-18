@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - EduTech</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material UI Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="material-icons text-primary me-2" style="font-size: 32px;">school</span>
+                <span class="fw-bold text-primary">EduTech</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-lg-3" href="index.html#signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center" style="min-height: 350px;">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-3">Explore Our Courses</h1>
+                    <p class="lead">Learn new skills with our comprehensive course library</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <span class="material-icons">search</span>
+                        </span>
+                        <input type="text" class="form-control border-start-0" placeholder="Search courses...">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <select class="form-select">
+                        <option selected>All Categories</option>
+                        <option value="1">Web Development</option>
+                        <option value="2">Data Science</option>
+                        <option value="3">Design</option>
+                        <option value="4">Business</option>
+                        <option value="5">Marketing</option>
+                    </select>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <select class="form-select">
+                        <option selected>All Levels</option>
+                        <option value="1">Beginner</option>
+                        <option value="2">Intermediate</option>
+                        <option value="3">Advanced</option>
+                    </select>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <select class="form-select">
+                        <option selected>Sort by Popularity</option>
+                        <option value="1">Newest First</option>
+                        <option value="2">Price: Low to High</option>
+                        <option value="3">Price: High to Low</option>
+                        <option value="4">Highest Rated</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="row g-4">
+                <!-- Course 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 border-0 shadow-sm">
+                        <div class="card-img-top bg-primary bg-gradient d-flex align-items-center justify-content-center"
+                            style="height: 200px;">
+                            <span class="material-icons text-white" style="font-size: 72px;">code</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Development</span>
+                            <span class="badge bg-success mb-2">Beginner</span>
+                            <h5 class="card-title fw-bold">Full Stack Web Development</h5>
+                            <p class="card-text text-muted">Master HTML, CSS, JavaScript, React, Node.js, and MongoDB to
+                                become a complete web developer.</p>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="material-icons text-muted me-2" style="font-size: 18px;">person</span>
+                                <small class="text-muted">John Smith</small>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center">
+                                    <span class="material-icons text-warning me-1">star</span>
+                                    <span class="fw-bold">4.8</span>
+                                    <span class="text-muted ms-1">(2,450)</span>
+                                </div>
+                                <span class="fw-bold text-primary fs-5">$99</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 border-0 shadow-sm">
+                        <div class="card-img-top bg-success bg-gradient d-flex align-items-center justify-content-center"
+                            style="height: 200px;">
+                            <span class="material-icons text-white" style="font-size: 72px;">analytics</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Data Science</span>
+                            <span class="badge bg-warning mb-2">Intermediate</span>
+                            <h5 class="card-title fw-bold">Data Science & Machine Learning</h5>
+                            <p class="card-text text-muted">Learn Python, pandas, scikit-learn, and deep learning to
+                                analyze data and build ML models.</p>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="material-icons text-muted me-2" style="font-size: 18px;">person</span>
+                                <small class="text-muted">Dr. Sarah Johnson</small>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center">
+                                    <span class="material-icons text-warning me-1">star</span>
+                                    <span class="fw-bold">4.9</span>
+                                    <span class="text-muted ms-1">(1,890)</span>
+                                </div>
+                                <span class="fw-bold text-primary fs-5">$129</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 border-0 shadow-sm">
+                        <div class="card-img-top bg-warning bg-gradient d-flex align-items-center justify-content-center"
+                            style="height: 200px;">
+                            <span class="material-icons text-white" style="font-size: 72px;">palette</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Design</span>
+                            <span class="badge bg-success mb-2">Beginner</span>
+                            <h5 class="card-title fw-bold">UI/UX Design Mastery</h5>
+                            <p class="card-text text-muted">Create stunning user interfaces and experiences with Figma,
+                                Adobe XD, and design principles.</p>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="material-icons text-muted me-2" style="font-size: 18px;">person</span>
+                                <small class="text-muted">Emma Williams</small>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center">
+                                    <span class="material-icons text-warning me-1">star</span>
+                                    <span class="fw-bold">4.7</span>
+                                    <span class="text-muted ms-1">(1,234)</span>
+                                </div>
+                                <span class="fw-bold text-primary fs-5">$89</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 border-0 shadow-sm">
+                        <div class="card-img-top bg-info bg-gradient d-flex align-items-center justify-content-center"
+                            style="height: 200px;">
+                            <span class="material-icons text-white" style="font-size: 72px;">computer</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">Development</span>
+                            <span class="badge bg-warning mb-2">Intermediate</span>
+                            <h5 class="card-title fw-bold">Python Programming Complete</h5>
+                            <p class="card-text text-muted">From basics to advanced topics including OOP, data
+                                structures, and real-world projects.</p>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="material-icons text-muted me-2" style="font-size: 18px;">person</span>
+                                <small class="text-muted">Michael Brown</small>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center">
+                                    <span class="material-icons text-warning me-1">star</span>
+                                    <span class="fw-bold">4.8</span>
+                                    <span class="text-muted ms-1">(3,120)</span>
+                                </div>
+                                <span class="fw-bold text-primary fs-5">$79</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 border-0 shadow-sm">
+                        <div class="card-img-top bg-danger bg-gradient d-flex align-items-center justify-content-center"
+                            style="height: 200px;">
+                            <span class="material-icons text-white" style="font-size: 72px;">campaign</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Marketing</span>
+                            <span class="badge bg-success mb-2">Beginner</span>
+                            <h5 class="card-title fw-bold">Digital Marketing Fundamentals</h5>
+                            <p class="card-text text-muted">Learn SEO, social media marketing, email campaigns, and
+                                analytics to grow your business.</p>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="material-icons text-muted me-2" style="font-size: 18px;">person</span>
+                                <small class="text-muted">David Lee</small>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center">
+                                    <span class="material-icons text-warning me-1">star</span>
+                                    <span class="fw-bold">4.6</span>
+                                    <span class="text-muted ms-1">(980)</span>
+                                </div>
+                                <span class="fw-bold text-primary fs-5">$69</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 border-0 shadow-sm">
+                        <div class="card-img-top bg-secondary bg-gradient d-flex align-items-center justify-content-center"
+                            style="height: 200px;">
+                            <span class="material-icons text-white" style="font-size: 72px;">memory</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">Development</span>
+                            <span class="badge bg-danger mb-2">Advanced</span>
+                            <h5 class="card-title fw-bold">Cloud Computing with AWS</h5>
+                            <p class="card-text text-muted">Master AWS services including EC2, S3, Lambda, and deploy
+                                scalable cloud applications.</p>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="material-icons text-muted me-2" style="font-size: 18px;">person</span>
+                                <small class="text-muted">Robert Taylor</small>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center">
+                                    <span class="material-icons text-warning me-1">star</span>
+                                    <span class="fw-bold">4.9</span>
+                                    <span class="text-muted ms-1">(1,567)</span>
+                                </div>
+                                <span class="fw-bold text-primary fs-5">$149</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 border-0 shadow-sm">
+                        <div class="card-img-top bg-primary bg-gradient d-flex align-items-center justify-content-center"
+                            style="height: 200px;">
+                            <span class="material-icons text-white" style="font-size: 72px;">phone_android</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Development</span>
+                            <span class="badge bg-warning mb-2">Intermediate</span>
+                            <h5 class="card-title fw-bold">Mobile App Development</h5>
+                            <p class="card-text text-muted">Build native iOS and Android apps using React Native and
+                                Flutter frameworks.</p>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="material-icons text-muted me-2" style="font-size: 18px;">person</span>
+                                <small class="text-muted">Jennifer Martinez</small>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center">
+                                    <span class="material-icons text-warning me-1">star</span>
+                                    <span class="fw-bold">4.7</span>
+                                    <span class="text-muted ms-1">(2,103)</span>
+                                </div>
+                                <span class="fw-bold text-primary fs-5">$119</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 8 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 border-0 shadow-sm">
+                        <div class="card-img-top bg-success bg-gradient d-flex align-items-center justify-content-center"
+                            style="height: 200px;">
+                            <span class="material-icons text-white" style="font-size: 72px;">security</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Security</span>
+                            <span class="badge bg-danger mb-2">Advanced</span>
+                            <h5 class="card-title fw-bold">Cybersecurity Essentials</h5>
+                            <p class="card-text text-muted">Learn network security, ethical hacking, and how to protect
+                                systems from cyber threats.</p>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="material-icons text-muted me-2" style="font-size: 18px;">person</span>
+                                <small class="text-muted">Kevin Anderson</small>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center">
+                                    <span class="material-icons text-warning me-1">star</span>
+                                    <span class="fw-bold">4.8</span>
+                                    <span class="text-muted ms-1">(1,456)</span>
+                                </div>
+                                <span class="fw-bold text-primary fs-5">$139</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 9 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card course-card h-100 border-0 shadow-sm">
+                        <div class="card-img-top bg-warning bg-gradient d-flex align-items-center justify-content-center"
+                            style="height: 200px;">
+                            <span class="material-icons text-white" style="font-size: 72px;">business_center</span>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Business</span>
+                            <span class="badge bg-success mb-2">Beginner</span>
+                            <h5 class="card-title fw-bold">Project Management Professional</h5>
+                            <p class="card-text text-muted">Master Agile, Scrum, and traditional project management
+                                methodologies for career growth.</p>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="material-icons text-muted me-2" style="font-size: 18px;">person</span>
+                                <small class="text-muted">Linda Garcia</small>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-3">
+                                <div class="d-flex align-items-center">
+                                    <span class="material-icons text-warning me-1">star</span>
+                                    <span class="fw-bold">4.6</span>
+                                    <span class="text-muted ms-1">(876)</span>
+                                </div>
+                                <span class="fw-bold text-primary fs-5">$99</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-primary w-100">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Course pagination" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Can't Find What You're Looking For?</h2>
+                    <p class="lead mb-4">Contact us to suggest a new course or get personalized recommendations</p>
+                    <a href="contact.html" class="btn btn-light btn-lg">
+                        <span class="material-icons align-middle me-2">contact_support</span>
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="material-icons me-2" style="font-size: 32px;">school</span>
+                        <h4 class="mb-0 fw-bold">EduTech</h4>
+                    </div>
+                    <p class="text-white-50">Empowering learners worldwide with quality education and cutting-edge
+                        technology.</p>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-outline-light btn-sm me-2 rounded-circle">
+                            <span class="material-icons" style="font-size: 18px;">facebook</span>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm me-2 rounded-circle">
+                            <span class="material-icons" style="font-size: 18px;">link</span>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm me-2 rounded-circle">
+                            <span class="material-icons" style="font-size: 18px;">tag</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About Us</a>
+                        </li>
+                        <li class="mb-2"><a href="courses.html" class="text-white-50 text-decoration-none">Courses</a>
+                        </li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Categories</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="courses.html" class="text-white-50 text-decoration-none">Web
+                                Development</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-white-50 text-decoration-none">Data
+                                Science</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-white-50 text-decoration-none">Design</a>
+                        </li>
+                        <li class="mb-2"><a href="courses.html" class="text-white-50 text-decoration-none">Business</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 d-flex align-items-start">
+                            <span class="material-icons me-2">location_on</span>
+                            <span class="text-white-50">123 Education St, Learning City, LC 12345</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <span class="material-icons me-2">email</span>
+                            <span class="text-white-50">info@edutech.com</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <span class="material-icons me-2">phone</span>
+                            <span class="text-white-50">+1 (555) 123-4567</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white opacity-25">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50">&copy; 2025 EduTech. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
