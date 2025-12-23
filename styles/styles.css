@@ -1,13 +1,18 @@
 /* Custom CSS for EduTech Website */
 :root {
-  --primary-color: #0d6efd;
-  --secondary-color: #6c757d;
-  --success-color: #198754;
-  --info-color: #0dcaf0;
-  --warning-color: #ffc107;
-  --danger-color: #dc3545;
-  --dark-color: #212529;
-  --light-color: #f8f9fa;
+  --primary-color: #2563eb;
+  --yellow-color: #fbbf24;
+  --green-color: #10b981;
+  --blue-color: #2563eb;
+  --red-color: #ef4444;
+  --ash-color: #6b7280;
+  --secondary-color: #6b7280;
+  --success-color: #10b981;
+  --info-color: #2563eb;
+  --warning-color: #fbbf24;
+  --danger-color: #ef4444;
+  --dark-color: #1f2937;
+  --light-color: #f9fafb;
 }
 
 * {
@@ -67,7 +72,7 @@ html {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #fef3c7 0%, #dbeafe 50%, #d1fae5 100%);
   padding-top: 80px;
 }
 
@@ -114,7 +119,7 @@ html {
 
 /* Stats Section */
 .stats-section {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #0a58ca 100%);
+  background: linear-gradient(135deg, var(--blue-color) 0%, var(--green-color) 50%, var(--yellow-color) 100%);
 }
 
 .stat-item {
@@ -192,18 +197,18 @@ html {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #0a58ca 100%);
+  background: linear-gradient(135deg, var(--blue-color) 0%, var(--green-color) 100%);
 }
 
 .btn-outline-primary:hover {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #0a58ca 100%);
+  background: linear-gradient(135deg, var(--blue-color) 0%, var(--green-color) 100%);
 }
 
 /* Page Header */
 .page-header {
   padding-top: 100px;
   padding-bottom: 50px;
-  background: linear-gradient(135deg, var(--primary-color) 0%, #0a58ca 100%);
+  background: linear-gradient(135deg, var(--blue-color) 0%, var(--green-color) 50%, var(--yellow-color) 100%);
 }
 
 /* Team Cards */
@@ -256,8 +261,8 @@ html {
 
 .form-control:focus,
 .form-select:focus {
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  border-color: var(--blue-color);
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
 }
 
 .form-label {
@@ -273,13 +278,13 @@ html {
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, var(--blue-color) 0%, var(--green-color) 100%);
   color: white;
 }
 
 .accordion-button:focus {
   box-shadow: none;
-  border-color: var(--primary-color);
+  border-color: var(--blue-color);
 }
 
 /* Footer */
@@ -305,8 +310,8 @@ footer a:hover {
 }
 
 .page-item.active .page-link {
-  background: linear-gradient(135deg, var(--primary-color) 0%, #0a58ca 100%);
-  border-color: var(--primary-color);
+  background: linear-gradient(135deg, var(--blue-color) 0%, var(--green-color) 100%);
+  border-color: var(--blue-color);
 }
 
 .page-link:hover {
@@ -430,7 +435,7 @@ footer a:hover {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--primary-color);
+  background: linear-gradient(135deg, var(--blue-color) 0%, var(--green-color) 100%);
   color: white;
   display: none;
   align-items: center;
@@ -479,23 +484,23 @@ footer a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background: linear-gradient(135deg, var(--blue-color) 0%, var(--green-color) 100%);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0a58ca;
+  background: var(--green-color);
 }
 
 /* Text Selection */
 ::selection {
-  background: var(--primary-color);
-  color: white;
+  background: var(--yellow-color);
+  color: var(--dark-color);
 }
 
 ::-moz-selection {
-  background: var(--primary-color);
-  color: white;
+  background: var(--yellow-color);
+  color: var(--dark-color);
 }
 
 /* Utility Classes */
@@ -515,7 +520,7 @@ footer a:hover {
 .alert-success {
   border-radius: 10px;
   border: none;
-  background: linear-gradient(135deg, var(--success-color) 0%, #146c43 100%);
+  background: linear-gradient(135deg, var(--green-color) 0%, #059669 100%);
   color: white;
 }
 
@@ -523,7 +528,7 @@ footer a:hover {
 .alert-danger {
   border-radius: 10px;
   border: none;
-  background: linear-gradient(135deg, var(--danger-color) 0%, #b02a37 100%);
+  background: linear-gradient(135deg, var(--red-color) 0%, #dc2626 100%);
   color: white;
 }
 
